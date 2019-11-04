@@ -481,12 +481,12 @@
 \renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}%
   {-3.5ex plus -1ex minus -.2ex}%
   {1.8ex plus.2ex}%
-  {\noindent\normalfont\bfseries}}
+  {\noindent\normalfont\itshape}}
 
 \renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0pt}%
   {-3.5ex plus -1ex minus -.2ex}%
   {1.8ex plus.2ex}%
-  {\noindent\normalfont\bfseries}}
+  {\noindent\normalfont\itshape}}
 
 \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}%
   {3.5ex plus 1ex minus .2ex}%

@@ -34,7 +34,7 @@ number = \textsuperscript{#1} ,
 \title[short title]{Papers of the Linguistic Society of Belgium\\ Author guidelines}
 
 
-\author[Vanden Wyngaerd]% short form of the author name(s) for the running header
+\author[Guido Vanden Wyngaerd]% short form of the author name(s) for the running header
 {
 \spauthor{Guido Vanden Wyngaerd \\ \institute{KU Leuven}} 
 %\AND 
@@ -73,15 +73,16 @@ A template for MS Word files (BKLtempl.dot) is also available. Make use of the e
 Please use the appropriate predefined styles in the template.
 
 \ex. \begin{tabular}[t]{llll@{\hskip 36pt}}
-TITLE			& Title of your article\\
-SUBTITLE		& Subtitle of your article\\
-AUTHOR		& Your name\\
-AFFILIATION	& Your affiliation\\
-ABSTRACT	& 	Abstract\\
+Title			& Title of your article\\
+Subtitle		& Subtitle of your article\\
+Authors		& Author name(s)\\
+Affiliation	& Your affiliation\\
+Abstract	& 	Abstract\\
 utitle0,u	& 	Unnumbered section heading (for notes, references)\\
 Vtitle1, v	& 	Section heading, first level\\
 Wtitle2, w	& 	Section heading, second level\\
 Xtitle 3, x	& 	Section heading, third level\\
+Normal,s & Running text \\
 Quote, q	& 	Block quotation\\
 Table, t	& 	Table\\
 Figure, f	& 	Figure\\
@@ -98,7 +99,7 @@ The running heads will be generated automatically if you have filled in the appr
 
 \subsection{Margins}
 
-It is not possible to fix the settings of the margins in the electronic style, and copying material into the document may change the margin settings. Please check the margin settings before you start formatting your article and before you submit it to the editors. The margin settings should be (on the basis of A4 paper size):
+It is not possible to fix the settings of the margins in the electronic style, and copying material into the document may change the margin settings. Please check the margin settings before you start formatting your article and before you submit it to the editors. The margin settings should be as in \Next  (on the basis of A4 paper size):
 
 \ex. \begin{tabular}[t]{llll@{\hskip 36pt}}
 Top 	&	7,20 cm\\
@@ -134,7 +135,7 @@ Please note that the interlinear gloss gets no punctuation and no highlighting. 
 
 \section{Tables and figures}
 
-In \LaTeX, tables and figures are treated as floats. This means that their placement on the page will not necessarily be where you put it in your manuscript, as this may lead to large parts of the page ending up white (e.g. when a table or figure does not fit on the current page anymore and wraps onto the following page). For this reason, you must always refer to tables and figures in the running text, as in the following example: `In certain languages, the superlative transparently contains the comparative morphologically, as illustrated in Table \ref{tbl:table1} \citep[46]{Bobaljik2012}.' Do not refer to tables and figures using the words `following', `below' or `above', as the final placement of your table or figure may be different from where you placed them in your manuscript.
+In \LaTeX, tables and figures are treated as floats. This means that their placement on the page will not necessarily be where you put it in your manuscript, as this may lead to large parts of the page ending up white (e.g. when a table or figure does not fit on the current page anymore and wraps onto the following page). For this reason, you must always refer to tables and figures in the running text, as in the following example: ``In certain languages, the superlative transparently contains the comparative morphologically, as illustrated in Table \ref{tbl:table1} \citep[46]{Bobaljik2012}.'' Do not refer to tables and figures using the words `following', `below' or `above', as the final placement of your table or figure may be different from where you put them in your manuscript.
 
 \begin{table}[h]
 \centering
@@ -152,7 +153,7 @@ Number your tables and figures consecutively, and provide  appropriate captions.
 
 \section{Notes}
 
-Notes should be kept to a minimum and not be used for references. Note indicators in the text should appear at the end of sentences and follow punctuation marks.
+Notes should be kept to a minimum and not be used for references. Note indicators in the text should appear at the end of sentences and follow punctuation marks. Use footnotes rather than endnotes.
 
 \section{References}
 
