@@ -10,7 +10,6 @@
 \usepackage[linguistics]{forest} %for nice tree diagrams
 \usepackage[british]{babel} %to get single quotes with command \enquote used in references list
 \usepackage{multicol}
-\usepackage{lipsum}
 \usepackage{enotez} %for endnotes
 \DeclareInstance{enotez-list}{custom}{paragraph}{
 heading = \section*{#1} ,
@@ -31,12 +30,16 @@ number = \textsuperscript{#1} ,
 
 % Optional short title inside square brackets, for the running headers. If no short title is given, no title appears in the headers.
 
-\title[short title]{Papers of the Linguistic Society of Belgium\\ Author guidelines}
+\title[short title]{Papers of the LSB\\ 
+Studies van de BKL\\
+Travaux du CBL\\
+\Large Author guidelines}
 
 
 \author[Guido Vanden Wyngaerd]% short form of the author name(s) for the running header
 {
-\spauthor{Guido Vanden Wyngaerd \\ \institute{KU Leuven}} 
+\spauthor{Guido Vanden Wyngaerd \\ 
+\institute{KU Leuven}} 
 %\AND 
 %\spauthor{Author2 \\  \institute{Linguistic Institute}}
 }
@@ -46,7 +49,7 @@ number = \textsuperscript{#1} ,
 
 \maketitle
 
-\begin{abstract} \normalsize  \lipsum[1]
+\begin{abstract} \normalsize  This document provides a full overview of the information relating to submissions for the Papers of the LSB. This information includes (i) the stylesheet, and (ii) further author guidelines. So as to provide instruction both by example and by rule, this document has been formatted in accordance with the stylesheet it contains.
 \end{abstract}
 
 \clearpage
@@ -57,20 +60,24 @@ Manuscripts are accepted in Dutch, French, English and German. Should your contr
 
 The contributions should not exceed the limit of 4600 words (including footnotes, references etc.). 
 
-\section{Electronic files}
+\section{Copyright}
 
-Please name the file with the first three letters of the (first) author’s last name. Do not use the three-character extension for things other than the identification of the file type (smi.doc, not smi.new or smi.rev). 
+The Papers of the LSB are Open Access articles distributed under the terms of the Creative Commons Attribution 4.0 license (CC BY 4.0: \url{http://creativecommons.org/licenses/by/4.0}), which permit unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. Copyright is retained by the author(s).
 
-\section{Using the electronic templates}
+\section{Files}
+
+Please name the file containing your submission with the first three letters of the (first) author’s last name. Do not use the three-character extension for things other than the identification of the file type (smi.doc, not smi.new or smi.rev). 
+
+\section{Templates}
 
 \subsection{\LaTeX\ }
-Contributions in \LaTeX\ are strongly preferred. The necessary files are available at \url{https://github.com/guidovw/LSBlatex}. 
+Contributions in \LaTeX\ are strongly preferred. The necessary files are available at \url{https://github.com/guidovw/LSBlatex}. The current document, which is available as a tex file, can be used as a template by replacing the document text with the text of your paper.
 
 \subsection{MS Word}
 
-A template for MS Word files (BKLtempl.dot) is also available at the above web address. Make use of the electronic template, as this automatically takes care of the most important formatting aspects of your document. 
+A template for MS Word files (BKLtempl.dot) is also available at the above web address. Click on the file BKLtempl.dot, and then click on the Download button. Make use of the electronic template, as this automatically takes care of the most important formatting aspects of your document. 
 
-Please use the appropriate predefined styles in the template.
+Please also use the appropriate predefined styles in the template.
 
 \ex. \begin{tabular}[t]{llll@{\hskip 36pt}}
 Title			& Title of your article\\
@@ -113,7 +120,7 @@ Footer 	&	1,25 cm\\
 
 \section{Font enhancements}
 
-Font enhancements (such as italics, bold, caps, small caps, etc.) within the text must also be supplied by you. Whatever formatting or style conventions are employed, please be consistent.
+Font enhancements (such as italics, bold, caps, small caps, etc.) within the text must be supplied by you. Whatever formatting or style conventions are employed, please be consistent.
 
 Please use italics for foreign language words, highlighting and emphasis. Bold should be used only for highlighting within italics and for headings. Please refrain from the use of FULL CAPS (except for focal stress and abbreviations) and underlining (except for highlighting within examples, as an alternative for boldface), unless this is a strict convention in your field of research.
 
@@ -127,11 +134,13 @@ In the main text quotations should be given in double quotation marks. Quotation
 
 Examples should be numbered with Arabic numerals in parentheses.
 
-\exg. Kare wa besutoseraa o takusan kaite-iru\\
-he \textsc{top} best-seller \textsc{acc} many write-\textsc{pfv}\\
-\glt ‘He has written many best-sellers.’ 
+\ex. \emph{Japanese}\\ %optional line for the name of the language (italics), source, etc. Note the absence of \exg., instead use \ex. (and \a. \b. for subdivisions) when this optional line is present. Use \exg. etc. if this line is absent
+\gll Kare wa besutoseraa o takusan kaite-iru\\ %original foreign language example preceded by \gll
+he \textsc{top} best-seller \textsc{acc} many write-\textsc{pfv}\\ %gloss line
+\glt ‘He has written many best-sellers.’ %translation, preceded by \glt
 
-Please note that the interlinear gloss gets no punctuation and no highlighting. In MS Word,  The example and its gloss are lined up through the use of spaces; make sure the number of elements both lines match. If one word in language A corresponds to two words in language B use a full stop to glue the two together. Morphemes are separated by hyphens. For the abbreviations in the interlinear gloss use small caps. Consult the Leipzig Glossing Rules (\url{https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf}) for a list of standard abbreviations. If you use different abbreviations, add a list of abbreviations.
+\sloppy
+Please note that the interlinear gloss gets no punctuation and no highlighting. In MS Word, the example and its gloss are lined up through the use of spaces; make sure the number of elements on both lines match. For the abbreviations in the interlinear gloss use small caps. For more information on glossing conventions, consult the Leipzig Glossing Rules (\url{https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf}).  If you use different abbreviations than the standard ones in the Leipzig Glossing Rules, add a list of abbreviations at the end of your paper (just before the References).
 
 \section{Tables and figures}
 
@@ -161,20 +170,16 @@ Notes should be kept to a minimum and not be used for references. Note indicator
 It is essential that the references are formatted according to these guidelines. Examples of references in the text:
 
 \ex.[]
-\a.[] ``Hayes (1995a) has proposed to use \ldots''
-\b.[] ``\ldots\ if it is followed by a yer (Rubach 1993:144).''
-\b.[] ``\ldots\ (see for example Yarmohammadi 1973, and Baynham 1991), \ldots''
+ ``Hayes (1995a) has proposed to use \ldots''\\
+``\ldots\ if it is followed by a yer (Rubach 1993:144).''\\
+``\ldots\ (see for example Yarmohammadi 1973, and Baynham 1991).''
 
-Examples of references in the reference section: see the next section.
+For examples of references in the reference section: see the next section.
 
 %\printendnotes[custom] 
 
 \nocite{*} %this is to get all the entries of the sample bibliography; delete this line for an actual submission
 \bibliography{sample} %change 'sample' by the name of your bib-file
-
-\section{Appendixes}
-
-Appendixes should follow the References section.
 
 
 \end{document}
