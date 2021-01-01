@@ -73,20 +73,8 @@
 
 .gitattributes
 
+.texpadtmp
+
 ehthumbs.db
 
 Thumbs.db
-
-# Latex editors #
-
-.texpadtmp
-
-*.out
-
-*.toc
-
-*.bbl
-
-*.aux
-
-*.blg
